@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="<?php bloginfo( 'charset' ); ?>">
-    <title><?php wp_title( '|', true, 'right' ); ?></title>
-    <link rel="stylesheet" href="<?php echo esc_url( get_stylesheet_uri() ); ?>" type="text/css" />
-    <?php wp_head(); ?>
+        <title><?php wp_title( '|', true, 'right' ); ?></title>
+        <link rel="stylesheet" href="<?php echo esc_url( get_stylesheet_uri() ); ?>" type="text/css" />
+        <?php wp_head(); ?>
 </head>
+
+
 <body>
     <h1><?php bloginfo( 'name' ); ?></h1>
     <h2><?php bloginfo( 'description' ); ?></h2>
