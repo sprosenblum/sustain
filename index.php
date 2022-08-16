@@ -36,7 +36,7 @@ get_header();
 
     <?php endif; ?>
 
-    <?php wp_footer(); ?>
+    <?php get_footer(); ?>
 
 </body>
 </html>
