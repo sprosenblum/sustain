@@ -34,9 +34,11 @@
 
     <?php else: ?>
 
-    <p>No posts found. :(</p>
+        <p>No posts found. :(</p>
 
     <?php endif; ?>
+
     <?php wp_footer(); ?>
+
 </body>
 </html>
