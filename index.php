@@ -4,39 +4,44 @@ get_header();
 
 ?>
 
-<body>
-    <h1><?php bloginfo( 'name' ); ?></h1>
-    <h2><?php bloginfo( 'description' ); ?></h2>
+    <body>
+        <h1 class="text-center mt-3">
+            <?php bloginfo( 'name' ); ?>
+        </h1>
 
-    <?php if ( have_posts() ) :
-        while ( have_posts() ) : the_post(); ?>
+        <h2 class="text-center mt-3 fs-4 text">
+            <?php bloginfo( 'description' ); ?>
+        </h2>
 
-            <h3><?php the_title(); ?></h3>
+        <?php if ( have_posts() ) :
+                while ( have_posts() ) : the_post(); ?>
 
-            <?php the_content(); ?>
-            <?php wp_link_pages(); ?>
-            <?php edit_post_link(); ?>
+                    <h3><?php the_title(); ?></h3>
 
-        <?php endwhile; ?>
+                    <?php the_content(); ?>
+                    <?php wp_link_pages(); ?>
+                    <?php edit_post_link(); ?>
 
-    <?php
-    if ( get_next_posts_link() ) {
-        next_posts_link();
-        }
-        ?>
-    <?php
-    if ( get_previous_posts_link() ) {
-        previous_posts_link();
-        }
-    ?>
+                <?php endwhile; ?>
 
-    <?php else: ?>
+                <?php
+                if ( get_next_posts_link() ) {
+                    next_posts_link();
+                    }
+                    ?>
+                <?php
+                if ( get_previous_posts_link() ) {
+                    previous_posts_link();
+                    }
+                ?>
 
-        <p>No posts found. :(</p>
+            <?php else: ?>
 
-    <?php endif; ?>
+            <p>No posts found. :(</p>
 
-    <?php get_footer(); ?>
+        <?php endif; ?>
 
-</body>
+        <?php get_footer(); ?>
+
+    </body>
 </html>
