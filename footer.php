@@ -1,6 +1,6 @@
 <?php wp_footer(); ?>
 
-<footer class="bg-dark text-center text-white">
+<footer class="text-center text-white" style="background-color: #3da02e;">
   <!-- Grid container -->
   <div class="container p-4 pb-0">
     <!-- Section: Form -->
@@ -45,6 +45,7 @@
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
      &copy; 2022 Building Sustainable Ohio Communities
+
 
 </footer>
 <!-- Footer -->
