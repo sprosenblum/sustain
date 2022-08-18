@@ -2,6 +2,12 @@
 Theme Name: Sustain Theme
 */
 
+.navbar-expand-lg .navbar-nav > li > a.active {
+
+    background-color:  #f4b136;
+}
+
 body {
     background: #21759b;
 }
+
